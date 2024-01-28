@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9BC9F1">
+
+            <TextView
+                android:id="@+id/TitleID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title :"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/TitleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Iron Man "
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/TitleID"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/YearID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year :"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/TitleID"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/YearDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2010"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/YearID"
+                android:layout_below="@id/TitleID"/>
+
+            <TextView
+                android:id="@+id/TypeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type :"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/YearID"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/TypeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" action"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/TypeID"
+                android:layout_below="@id/YearID"/>
+
+            <ImageView
+                android:id="@+id/Poster"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/baseline_local_movies_24" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
